@@ -11,7 +11,7 @@ os.environ['SDL_VIDEO_WINDOW_POS'] = '0,0' ## окно открывается в
 info = pygame.display.Info() ##получение разрешения монитора
 WIDTH_WIN, HEIGHT_WIN = info.current_w * 100 // 125, info.current_h * 100 // 125  ##расширение окна
 print(info.current_w, info.current_h)
-print(WIDTH_WIN, HEIGHT_WIN)
+print(WIDTH_WIN, HEIGHT_WIN)S
 
 screen = pygame.display.set_mode((WIDTH_WIN, HEIGHT_WIN)) ##переменная окна
 pygame.mouse.set_visible(False) ## видимость мыши на экране (невидна)
@@ -22,7 +22,7 @@ clock = pygame.time.Clock()
 run = True
 while run: 
     for e in pygame.event.get(): ## в е попадают любые изменения/нажатия на клаве или мыши
-        if e.type == pygame.QUIT or e.tipe == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
+        if e.type == pygame.QUIT or e.type == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
             run = False
     ## pygame.QUIT нажатие на крестик закрытия окна
     ## e.tipe == pygame.KEYDOWN and e.key == pygame.K_ESCAPE: нажата клавиша escape 
